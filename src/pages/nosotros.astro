@@ -1,0 +1,79 @@
+---
+import '../styles/global.css';
+import Header from "../components/Header.astro";
+import Carousel2 from '../components/Carousel2.astro';
+import Contactanoss from '../components/Contactanoss.astro';
+import Footer from '../components/Footer.astro';
+
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <Header />
+  <!-- Imagen de incio -->
+  <div class="bg-center mt-10 flex justify-center">
+    <img src="/conta.jpg" alt="" class="h-[600px] w-[2000px] object-cover">
+  </div>
+
+  <div class="bg-center mt-10 flex justify-center text-3xl text-center">
+    <h1>En Vixion Consultores, somos especialistas en soluciones contables y fiscales. Ofrecemos asesoría y capacitación en contabilidad, impuestos, nómina, IMSS e INFONAVIT. <br>
+      Nuestras soluciones están diseñadas para optimizar tus recursos, asegurar el cumplimiento normativo y brindarte la tranquilidad que tu negocio necesita.</h1>
+  </div>
+
+  <br>
+
+  <hr class="featurette-divider max-w-[2500px] h-5 my-10 border-t-4 border-gray-400 mx-auto">
+
+  <div class="text-3xl text-center">
+    <b>
+      Equipo
+    </b>
+  </div>
+  <br>
+  
+  <Carousel2 />
+
+  <hr class="featurette-divider max-w-[2500px] h-5 my-10 border-t-4 border-gray-400 mx-auto">
+
+  <div class="text-3xl text-center">
+    <b>
+      Contáctanos
+    </b>
+  </div>
+  <br>
+
+  <!-- contactanos -->
+
+
+   <!-- Contacto y mapa -->
+   <section class="flex flex-col lg:flex-row px-4 lg:px-32 gap-10 mb-20">
+    <div class="flex-1">
+      <Contactanoss />
+    </div>
+
+    
+    <!-- Mapa -->
+    <div class="flex-5 mt-10 mb-10 lg:mt-20 lg:mb-20">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.319243037162!2d-109.92839252398734!3d22.90159292083074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af4bfba29a0f0d%3A0x6d037cad4aad978e!2sVixion%20Consultores!5e0!3m2!1ses!2smx!4v1740549232421!5m2!1ses!2smx" 
+            class="w-full h-64 lg:h-115" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+  </div>
+  </section>
+
+
+
+
+  <Footer />
+
+</body>
+</html>

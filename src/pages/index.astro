@@ -1,0 +1,69 @@
+---
+// src/pages/index.astro
+import Header from '../components/Header.astro';
+import Carrusel from '../components/Carousel.astro';
+import Preguntas from '../components/preguntas.astro';
+import Contactanos from '../components/contactanos.astro';
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Vixion</title>
+  </head>
+  <body class="bg-gray-200 font-sans antialiased">
+    <!-- Header -->
+    <Header />
+    <br>
+    <br>
+
+    <!-- Imagen de fondo -->
+    <div class="h-[300px] md:h-[400px] bg-cover bg-center" style="background-image: url('/bcs.jpg');">
+      <div class="flex flex-col justify-center items-start pl-4 md:pl-20 h-full bg-black/50">
+        <h1 class="text-white text-3xl sm:text-4xl md:text-6xl drop-shadow-md font-bold leading-tight">
+          Vixion Consultores ofrece <br> asesoría y capacitación
+        </h1>
+        <p class="text-white text-base sm:text-lg md:text-2xl drop-shadow-md font-bold mt-2">
+          Servicios especializados para empresas y profesionales.
+        </p>
+      </div>
+    </div>
+
+    <hr class="featurette-divider max-w-[2500px] h-1 my-10 border-t-4 border-gray-400 mx-auto">
+
+    <!-- Título de servicios -->
+    <div class="h-auto py-4 flex items-center justify-center">
+      <h1 class="text-center font-bold text-xl sm:text-2xl md:text-4xl">Servicios</h1>
+    </div>
+
+    <!-- Carrusel -->
+    <div class="py-6 sm:py-10 px-2 sm:px-4">
+      <Carrusel />
+    </div>
+
+    <hr class="featurette-divider max-w-[2500px] h-1 my-10 border-t-4 border-gray-400 mx-auto">
+
+    <div class="h-auto py-4 flex items-center justify-center">
+      <h1 class="text-center font-bold text-xl sm:text-2xl md:text-4xl">Preguntas Frecuentes</h1>
+    </div>
+
+    <!-- Preguntas -->
+    <div class="px-2 sm:px-4">
+      <Preguntas />
+    </div>
+
+    <hr class="featurette-divider max-w-[2500px] h-1 my-10 border-t-4 border-gray-400 mx-auto">
+
+    <!-- Contactanos -->
+    <div class="px-2 sm:px-4 pb-6">
+      <Contactanos />
+    </div>
+
+  </body>
+</html>

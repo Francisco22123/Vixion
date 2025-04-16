@@ -1,0 +1,95 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar con Astro y Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+     
+
+
+    <nav class="bg-gray-100 p-4 shadow-lg shadow-gray-800/30 ">
+      <div class="container mx-auto flex justify-between items-center">
+          <!-- Logo -->
+          <a href="/" class="flex items-center space-x-2">
+            <img src="/public/vixion.png" alt="Logo" class="h-20 w-20 object-contain" />
+            <span class="text-4xl font-semibold text-black">Vixion</span>
+
+
+          </a>
+  
+          <!-- Botón menú móvil -->
+          <button id="menu-btn" class="text-black text-2xl md:hidden">
+              ☰
+          </button>
+  
+          <!-- Menú principal (oculto en móvil) -->
+          <ul id="menu" class="hidden md:flex space-x-6 text-black">
+
+            <li class="relative group">
+              <a href="#" class="hover:font-medium text-2xl ">Servicios ▾</a>
+              <ul class=" absolute left-0 top-full  w-48 bg-gray-100 shadow-lg shadow-gray-800/30  rounded-xl
+ hidden group-hover:block ">
+                  <li><a href="/contabilidad" class="block px-4 py-2 hover:bg-gray-300 text-2xl rounded-t-xl">Contabilidad</a></li>
+                  <li><a href="/nomina" class="block px-4 py-2 hover:bg-gray-300 text-2xl">Nómina</a></li>
+                  <li><a href="/immseinfonavit" class="block px-4 py-2 hover:bg-gray-300 text-2xl">IMSS e INFONAVIT</a></li>
+                  <li><a href="/capacitacion" class="block px-4 py-2 hover:bg-gray-300 text-2xl rounded-b-xl
+ ">Capacitación</a></li>
+              </ul>
+          </li>
+
+              <li><a href="/nosotros" class="hover:font-medium text-2xl">Contactanos</a></li>
+              <li><a href="/nosotros" class="hover:font-medium text-2xl ">Nosotros</a></li>
+ 
+          </ul>
+      </div>
+  
+
+
+      <!-- Menú móvil (oculto por defecto) -->
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-100 p-4">
+      <ul class="space-y-2 text-black">
+ 
+          <!-- Submenú en móviles -->
+          <li>
+              <button id="submenu-btn" class="w-full text-left hover:font-medium flex justify-between items-center  text-2xl">
+                  Servicios ▾
+              </button>
+              <ul id="submenu" class="hidden space-y-2 ml-4  ">
+                  <li><a href="/contabilidad" class="block hover:font-medium  hover:bg-gray-100   text-2xl">Contabilidad</a></li>
+                  <li><a href="/nomina" class="block hover:font-medium  hover:bg-gray-100  text-2xl ">Nómina</a></li>
+                  <li><a href="/immseinfonavit" class="block hover:font-medium  hover:bg-gray-100  text-2xl  ">IMSS e INFONAVIT</a></li>
+                  <li><a href="/capacitacion" class="block hover:font-medium  hover:bg-gray-100  text-2xl  ">Capacitación</a></li>
+
+                </ul>
+          </li>
+
+          <li><a href="/nosotros" class="hover:font-medium  text-2xl">Contactanos</a></li>
+          <li><a href="/nosotros" class="hover:font-medium  text-2xl">Nosotros</a></li>
+      </ul>
+  </div>
+</nav>
+  </nav>
+  
+    <!-- Script para toggle del menú móvil -->
+   <!-- Script para mostrar/ocultar menú -->
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const submenuBtn = document.getElementById('submenu-btn');
+      const submenu = document.getElementById('submenu');
+
+      menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+      });
+
+      submenuBtn.addEventListener('click', () => {
+              submenu.classList.toggle('hidden');
+          });
+  });
+</script>
+</body>
+</html>

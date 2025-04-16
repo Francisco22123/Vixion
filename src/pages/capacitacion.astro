@@ -1,0 +1,98 @@
+---
+import '../styles/global.css';
+import Header from "../components/Header.astro";
+import Carousel2 from '../components/Carousel2.astro';
+import Contactanoss from '../components/Contactanoss.astro';
+import Footer from '../components/Footer.astro';
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capacitación Empresarial</title>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <Header />
+
+  <!-- Bloque principal -->
+  <section class="flex flex-col lg:flex-row items-center mt-16 px-4 lg:px-32 gap-10">
+    <!-- Imagen -->
+    <div class="flex-1 w-full">
+      <img src="/conta.jpg" alt="Cursos de contabilidad" class="w-full h-auto lg:h-[600px] object-cover rounded-2xl shadow-xl transition-transform hover:scale-105 duration-300">
+    </div>
+
+    <!-- Texto -->
+    <div class="flex-1 w-full text-xl lg:text-3xl leading-relaxed">
+        <b>Capacitación</b>
+        <br>
+        <br>
+      <p>
+        Ofrecemos <span class="font-semibold text-blue-600">cursos prácticos</span> en contabilidad, impuestos y finanzas,
+        impartidos por expertos. <br class="hidden lg:block">
+        Actualiza a tu equipo y mejora la eficiencia de tu negocio con nuestro servicio de capacitación especializada. 🏢✅
+      </p>
+    </div>
+  </section>
+
+  <!-- Separador -->
+  <hr class="featurette-divider max-w-[2500px] h-1 my-10 border-t-4 border-gray-400 mx-auto">
+
+  
+  <div class="text-center text-2xl lg:text-4xl font-bold text-blue-800 mb-6 px-4">
+    Beneficios de contratar nuestro servicio
+  </div>
+
+  
+  <section class="flex flex-col-reverse lg:flex-row items-center px-4 lg:px-32 gap-10">
+    <!-- Texto -->
+    <div class="flex-1 w-full text-lg lg:text-2xl leading-loose">
+      <p class="font-bold text-blue-600 mb-6">Capacitación Empresarial 🏢✅</p>
+
+      <ul class="space-y-4 list-inside">
+        <li>✔️ <b>Actualización:</b> Conocimientos al día en normativas y herramientas.</li>
+        <li>✔️ <b>Eficiencia:</b> Mayor productividad y menos errores.</li>
+        <li>✔️ <b>Ahorro:</b> Evita multas y optimiza procesos.</li>
+        <li>✔️ <b>Competitividad:</b> Decisiones más estratégicas.</li>
+        <li>✔️ <b>Personalización:</b> Cursos adaptados a tu negocio.</li>
+      </ul>
+    </div>
+
+    <!-- Imagen -->
+    <div class="flex-1 w-full">
+      <img src="/capacitacion.jpg" alt="Capacitación Empresarial" class="w-full h-auto lg:h-[600px] object-cover rounded-2xl shadow-xl transition-transform hover:scale-105 duration-300">
+    </div>
+  </section>
+
+  <!-- Separador -->
+  <hr class="featurette-divider max-w-[2500px] h-1 my-10 border-t-4 border-gray-400 mx-auto">
+
+  <!-- Contacto -->
+  <section class="flex flex-col lg:flex-row px-4 lg:px-32 gap-10 mb-20">
+    <div class="flex-1">
+      <Contactanoss />
+    </div>
+
+    
+    <!-- Mapa -->
+    <div class="flex-5 mt-10 mb-10 lg:mt-20 lg:mb-20">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.319243037162!2d-109.92839252398734!3d22.90159292083074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af4bfba29a0f0d%3A0x6d037cad4aad978e!2sVixion%20Consultores!5e0!3m2!1ses!2smx!4v1740549232421!5m2!1ses!2smx" 
+            class="w-full h-64 lg:h-115" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+  </div>
+  </section>
+
+  <Footer />
+
+
+
+
+
+</body>
+</html>
