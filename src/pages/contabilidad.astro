@@ -48,26 +48,64 @@ import Footer from '../components/Footer.astro';
   </div>
 
   <!-- Bloque beneficios -->
-  <section class="flex flex-col-reverse lg:flex-row items-center px-4 lg:px-32 gap-10">
-    <!-- Texto -->
-    <div class="flex-1 w-full text-lg lg:text-2xl leading-loose">
-        <p class="font-bold text-blue-600 mb-6">Beneficios del Servicio de Contabilidad 📊💼</p>
-      
-        <ul class="space-y-4 list-inside">
-          <li>✔️ Control preciso y actualizado de tus movimientos contables.</li>
-          <li>✔️ Cumplimiento oportuno de obligaciones fiscales y contables.</li>
-          <li>✔️ Reducción del riesgo ante auditorías y sanciones.</li>
-          <li>✔️ Asesoría personalizada en temas fiscales y financieros.</li>
-          <li>✔️ Reportes claros que facilitan la toma de decisiones estratégicas.</li>
-        </ul>
+
+<div class="px-4 sm:px-6 lg:px-12">
+
+  <p class="text-center text-3xl font-serif font-bold">Beneficios de contratar nuestros servicios</p>
+
+  <br>
+
+  <p class="text-lg lg:text-2xl leading-relaxed mb-6 text-center">
+    Nuestro servicio de contabilidad mantiene tus finanzas en orden, garantiza el cumplimiento fiscal, ofrece 
+    <br class="hidden sm:block"> 
+    reportes claros y asesoría personalizada para que puedas enfocarte en hacer crecer tu negocio.
+  </p>
+
+  <!-- Contenedor responsivo -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+
+    <!-- Tarjeta 1 -->
+    <div class="w-full h-120 bg-gray-300 rounded-3xl flex flex-col text-black overflow-hidden">
+      <img src="/nomina.jpg" alt="Ejemplo" class="h-1/2 w-full object-cover rounded-t-3xl">
+      <div class="flex items-center justify-center h-1/2 p-4">
+        <p class="text-2xl text-center font-serif">
+          Control preciso y actualizado de tus movimientos contables.
+        </p>
+      </div>
     </div>
 
-    <!-- Imagen -->
-    <div class="flex-1 w-full">
-      <img src="/IMSS.jpg" alt="Servicio contable" class="w-full h-auto lg:h-[600px] object-cover rounded-2xl shadow-xl transition-transform hover:scale-105 duration-300">
+    <!-- Tarjeta 2 -->
+    <div class="w-full h-120 bg-gray-300 rounded-3xl flex flex-col text-black overflow-hidden">
+      <img src="/nominaa.jpg" alt="Ejemplo" class="h-1/2 w-full object-cover rounded-t-3xl">
+      <div class="flex items-center justify-center h-1/2 p-4">
+        <p class="text-2xl text-center font-serif">
+          Cumplimiento oportuno de obligaciones fiscales y contables
+        </p>
+      </div>
     </div>
-  </section>
 
+    <!-- Tarjeta 3 -->
+    <div class="w-full h-120 bg-gray-300 rounded-3xl flex flex-col text-black overflow-hidden">
+      <img src="/capacitacion.jpg" alt="Ejemplo" class="h-1/2 w-full object-cover rounded-t-3xl">
+      <div class="flex items-center justify-center h-1/2 p-4">
+        <p class="text-2xl text-center font-serif">
+          Reducción del riesgo ante auditorías y sanciones.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tarjeta 4 -->
+    <div class="w-full h-120 bg-gray-300 rounded-3xl flex flex-col text-black overflow-hidden">
+      <img src="/nomina.jpg" alt="Ejemplo" class="h-1/2 w-full object-cover rounded-t-3xl">
+      <div class="flex items-center justify-center h-1/2 p-4">
+        <p class="text-2xl text-center font-serif">
+          Asesoría personalizada en temas fiscales y financieros.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
   <!-- Separador -->
   <hr class="featurette-divider max-w-[2500px] h-1 my-10 border-t-4 border-gray-400 mx-auto">
 
